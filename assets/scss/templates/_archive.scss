@@ -1,0 +1,156 @@
+#post-filter-bar {
+	padding-bottom: 2rem;
+	font-size: 80%;
+	width: 100%;
+}
+
+.archive,
+.home.blog {
+	main#main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		align-content: space-between;
+		justify-content: space-around;
+		width: 90%;
+		margin: 0 auto;
+		//max-width: $max-page-width;
+
+		header {
+			width: 100%;
+
+			h1 {
+				margin-top: 0;
+				padding-bottom: 5rem;
+			}
+		}
+
+		.archive-grid {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			align-content: space-between;
+			justify-content: space-around;
+		}
+
+		article {
+			min-width: 22ch;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 2px ( $gutter-width / 2 );
+			padding-bottom: 4rem;
+
+			&.featured-image {
+				header {
+					background-size: cover;
+					transition: all $button-transition-speed ease-in-out;
+
+					@include tablet-up {
+						&:hover {
+							transform: scale(1.05);
+							filter: brightness(1.25);
+							box-shadow: 0 1px 20px rgba( 0, 0, 0, 0.5 );
+						}
+					}
+
+
+
+					a,
+					a:link,
+					a:visited {
+						text-decoration: none;
+					}
+
+					object {
+						display: flex;
+						align-items: stretch;
+						min-height: 10em;
+
+					}
+
+					h3 {
+						align-self: flex-end;
+						display: block;
+						font-size: 2.5rem;
+						line-height: 1.2;
+						margin: 0 2rem 0 0;
+						padding: 1rem 2rem;
+						border-radius: 0 10px 0 0;
+					}
+				}
+
+				.read-more-link {
+					display: none;
+				}
+			}
+
+			footer {
+				align-self: center;
+			}
+
+		}
+	}
+}
+
+// archive list display (used for search results)
+
+.archive-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+	border-bottom: 1px solid rgba( $primary-background-color, 0.3 );
+
+	.featured-image {
+		width: 25%;
+		margin-right: $gutter-width;
+	}
+
+	.main-excerpt-content {
+		flex: 1;
+
+		h3 {
+			margin-top: 0;
+		}
+
+	}
+}
+
+nav.page-navigation {
+	padding: 1rem 0 5rem 0;
+	font-size: 80%;
+
+	ul.pagination {
+		list-style: none;
+		margin: 0;
+		padding: 2rem 0 0 0;
+		display: flex;
+		justify-content: center;
+
+		li {
+			flex: none;
+			margin: 0 0.5rem;
+
+			&.current {
+				padding: 0.75rem 1.5rem;
+				border: 1px solid $button-background-color;
+				border-radius: 5px;
+			}
+
+			a,
+			a:visited {
+				@include button-primary;
+				text-shadow: none;
+				border: none;
+				outline: none;
+				padding: 0.75rem 1.5rem;
+				display: inline-block;
+				transition: all $button-transition-speed ease-in-out;
+			}
+
+		}
+	}
+}

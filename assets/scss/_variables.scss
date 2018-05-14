@@ -1,0 +1,152 @@
+//
+// Variables
+//
+// 01. Colors
+// 02. Grid and layout
+// 03. Font sizes & typography
+// 04. Decorative details
+// 05. Form layout options
+
+// ---------------- 01. Colors
+
+// Colors used:
+$white: #fff;
+$dark:  #565050;
+
+$orange:	#FE5F55;
+$yellow:	#FCE197;
+$green:		#85ED3F;
+$light-blue: #B9D8F7;
+$blue:		#6D7298;
+$medium-blue: #565FA3;
+$slate:		#496C85;
+$purple: 	#564d95;
+
+
+// Define branding
+$default-background-color: 	$white;
+$default-text-color:       	$dark;
+$default-link-color:       	$blue;
+$default-link-color-hover: 	$medium-blue;
+$inverse-background-color: 	$dark;
+$inverse-text-color:       	$white;
+$inverse-link-color:       	$light-blue;
+$inverse-link-color-hover: 	$white;
+$primary-background-color:  $orange;
+$primary-text-color:		$white;
+$primary-link-color:		$yellow;
+$primary-link-color-hover:	$white;
+
+$header-background-color: 	rgba( $default-background-color, 0.5 );
+$footer-background-color:  	$inverse-background-color;
+$footer-text-color:			$inverse-text-color;
+$footer-link-color:			$inverse-link-color;
+$footer-link-color-hover: 	$inverse-link-color-hover;
+
+// Define elements
+
+// Primary / Default button:
+$button-background-color:       $primary-background-color;
+$button-background-color-hover: transparent;
+$button-text-color:             $primary-text-color;
+$button-text-color-hover:       $primary-link-color;
+$default-button-padding:        1rem 2rem;
+$button-border-radius:			5px;
+
+// ---------------- 02. Grid, layout & breakpoints
+
+// Layout & grid
+$max-page-width: 1150px; // use class "container" around your content for this to work.
+$page-padding:   15rem; // use class "container" around your content for this to work.
+$mobile-page-padding: 2rem; // smaller padding for the container on mobile
+$gutter-width:   30px;   // used in sections
+$sticky-footer:  true;   // change to "false" to remove and footer will just follow the content size.
+$golden-large:	63.8%;
+
+// Breakpoints
+// (concept borrowed from http://tapps.us/breakpoint-article )
+
+// Define breakpoints
+$breakpoint-small: 600px;
+$breakpoint-medium: 900px;
+$breakpoint-large: 1200px;
+$breakpoint-x-large: 1800px;
+
+// Breakpoint groupings by devices (used by the mixins in _utilities)
+$phone:                max-width $breakpoint-small;
+$phone-landscape:      ($breakpoint-small $breakpoint-medium) (orientation landscape);
+$tablet:               $breakpoint-small $breakpoint-large;
+$tablet-landscape:     ($breakpoint-medium $breakpoint-large) (orientation landscape);
+$tablet-portrait:      ($breakpoint-small $breakpoint-medium) (orientation portrait);
+$desktop:              $breakpoint-large;
+$large-desktop:        $breakpoint-x-large;
+
+$tablet-portrait-down: max-width $breakpoint-medium;
+$tablet-landscape-up:  $breakpoint-medium;
+
+
+// ---------------- 03. Font sizes & typography
+
+//
+// Font Variables
+
+$serif: 'Quattrocento', serif;
+$sans-serif: 'Work Sans', sans-serif;
+$sans-serif-alt: 'Roboto', sans-serif;
+
+$header-font: $sans-serif-alt;
+$body-font: $sans-serif;
+
+// The font size set on the root html element.
+$base-font-size: 24px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$base-unit: 'rem';
+
+// The font sizes for h1-h6.
+$h1-font-size: $base-font-size * 2.4;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.7;
+$h4-font-size: $base-font-size * 1.4;
+$h5-font-size: $base-font-size * 1.2;
+$h6-font-size: $base-font-size * 1.1;
+
+
+// ---------------- 04. Decorative details
+
+$border-radius: 4px;
+$button-transition-speed: 400ms;
+
+
+// ---------------- 05. Form layout options
+
+$label-color: $dark;
+$label-font-size: 1.8rem;
+
+$input-padding-y: 1.2rem;
+$input-padding-x: 1.2rem;
+
+$input-border-color: #ccc;
+$input-bg-color: #f6f6f6;
+$input-color: #333;
+
+$input-focus-border-color: #bbb;
+$input-focus-bg-color: $white;
+$input-focus-color: $dark;
+
+$input-error-color: #f00;
+$input-required-color: #f00;
+$input-accent-color: #09f;
+
+$gf-input-margin-y: 2.2rem;
+$gf-input-margin-x: 2rem;
+$gf-multi-input-margin-y: 0.8rem;
+
+$gf-primary-label-margin: 0.6rem;
+$gf-secondary-label-margin: 0.4rem;
+
+$gf-input-min-width: 18rem;

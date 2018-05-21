@@ -19,11 +19,13 @@ textarea {
 	border: 1px solid rgba( $default-text-color, 0.2 );
 	border-radius: 3px;
 	background: $default-background-color;
+	color: $default-text-color;
 	font-size: $base-font-size;
 	font-family: $sans-serif;
 	margin-left: 1rem;
 	box-shadow: none;
 	-webkit-appearance: none;
+	font-weight: normal;
 
 	&:hover {
 		border: 1px solid $primary-background-color;
@@ -33,6 +35,7 @@ textarea {
 		outline: none;
 		border: 1px dotted $default-link-color;
 		background: $default-background-color;
+
 	}
 }
 

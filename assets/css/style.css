@@ -390,11 +390,13 @@ textarea {
   border: 1px solid rgba(86, 80, 80, 0.2);
   border-radius: 3px;
   background: #fff;
+  color: #565050;
   font-size: 24px;
   font-family: "Work Sans", sans-serif;
   margin-left: 1rem;
   box-shadow: none;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-weight: normal; }
   input[type="email"]:hover,
   input[type="number"]:hover,
   input[type="password"]:hover,
